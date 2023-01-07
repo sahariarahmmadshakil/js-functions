@@ -36,16 +36,52 @@
 // console.log(propertySwayk);
 
 // problem 1: find the property of the objects
-const shopping={
-    books:5,
-    papers:16,
-    penColor: 'red',
-    booksName:'Stastics',
-    mouse:2,
-    mouseBrand:'logitech'
-}
+// const shopping={
+//     books:5,
+//     papers:16,
+//     penColor: 'red',
+//     booksName:'Stastics',
+//     mouse:2,
+//     mouseBrand:'logitech'
+// }
 // finding specific properties from bject 
-const penColor1 = shopping.penColor;
-console.log(penColor1);
-const penColor2 = shopping['penColor'];
-console.log(penColor2);
+// const penColor1 = shopping.penColor;
+// console.log(penColor1);
+// const penColor2 = shopping['penColor'];
+// console.log(penColor2);
+// // finding object all property and keys
+// const keys = Object.keys(shopping);
+// const values = Object.values(shopping);
+// console.log(keys);
+// console.log(values);
+
+// // if property value is in a variable then find the value 
+// shopping['mouse']=150;
+// const propertyName='mouse';
+// const propertyValue=shopping[propertyName];
+// console.log(propertyValue);
+// shopping.push['tutu',12];
+// console.log(shopping);
+
+const shopping = {
+    books: 5,
+    papers: 16,
+    penColor: 'red',
+    booksName: 'Stastics',
+    mouse: 2,
+    mouseBrand: 'logitech'
+}
+// getting values and keys by loop 
+// const keys=Object.keys(shopping);
+// for(let i = 0; i<keys.length; i++){
+//     const propertyKeys = keys[i];
+//     const propertyValue = shopping[propertyKeys];
+//     console.log(propertyValue);
+// }
+
+// gettinh keys and values by for in loop 
+
+// for(let propertyName in shopping){
+//     const propertyValues= shopping[propertyName];
+//     console.log(propertyName, ":", propertyValues);
+// }
