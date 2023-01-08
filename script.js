@@ -124,10 +124,24 @@ const shopping = {
 
 
 
-const arr =[5,8,10,15,20,63,55,89,55];
-for(let i = 0; i<arr.length; i++){
-    const elements = arr[i];
-    if(elements%2!==0){
-        console.log(elements);
+// const arr =[5,8,10,15,20,63,55,89,55];
+// for(let i = 0; i<arr.length; i++){
+//     const elements = arr[i];
+//     if(elements%2!==0){
+//         console.log(elements);
+//     }
+// }
+//  get odd numbers from an array 
+function getOddNumbers(numbers){
+    let sum=0;
+    const oddNumberArr=[];
+    for(let i = 0; i<numbers.length; i++){
+        const elements=numbers[i];
+        if(elements % 2 !==0){
+            sum = sum+elements;
+        }
     }
+    return sum;
 }
+const arr =[5,8,10,15,20,63,55,89,55];
+console.log(getOddNumbers(arr));
