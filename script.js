@@ -85,3 +85,49 @@ const shopping = {
 //     const propertyValues= shopping[propertyName];
 //     console.log(propertyName, ":", propertyValues);
 // }
+
+// Switch Case 
+// const color ='tou';
+// switch(color){
+//     case 'blue' :
+//         console.log("TT");
+//         break
+//     case 'red' :
+//         console.log("TtT");
+//         break
+//     case 'yellow' :
+//         console.log("ThhT");
+//         break
+//     case 'black' :
+//         console.log("TklT");
+//         break
+//         default:
+//             console.log('No color match')
+// }
+
+// three problem solving 
+
+// function make_avg(arr, sizeofarr){
+//     for(let i = 0; i<=arr.length;i++){
+// const values = arr[i];
+// return values;
+//     }
+// }
+
+// console.log(make_avg(10,20,30));
+
+// function inchToFeet(inch){
+//     const feet=inch/12;
+//     return feet;
+// }
+// console.log(inchToFeet(24));
+
+
+
+const arr =[5,8,10,15,20,63,55,89,55];
+for(let i = 0; i<arr.length; i++){
+    const elements = arr[i];
+    if(elements%2!==0){
+        console.log(elements);
+    }
+}
