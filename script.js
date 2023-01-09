@@ -132,16 +132,50 @@ const shopping = {
 //     }
 // }
 //  get odd numbers from an array 
-function getOddNumbers(numbers){
-    let sum=0;
-    const oddNumberArr=[];
-    for(let i = 0; i<numbers.length; i++){
-        const elements=numbers[i];
-        if(elements % 2 !==0){
-            sum = sum+elements;
-        }
+// function getOddNumbers(numbers){
+//     let sum=0;
+//     const oddNumberArr=[];
+//     for(let i = 0; i<numbers.length; i++){
+//         const elements=numbers[i];
+//         if(elements % 2 !==0){
+//             sum = sum+elements;
+//         }
+//     }
+//     return sum;
+// }
+// const arr =[5,8,10,15,20,63,55,89,55];
+// console.log(getOddNumbers(arr));
+
+// let i =0;
+// while(i<=10){
+//     console.log(i);
+//     i++;
+// }
+// for (let i=0;i<=10; i++){
+//     console.log(i);
+// }
+
+// understanding recursion 
+// function sunm(n){
+//     let sum=0;
+//     for (let i=0;i<=n;i++){
+//         sum=sum+i;
+//     }
+//     return sum;
+// }
+// console.log(sunm(5))
+// function recursion(i){
+//     if(i==1){
+//         return 1;
+//     }
+//     return i+ recursion(i-1);
+// }
+// console.log(recursion(5));
+
+function factorial(i){
+    if(i==1){
+        return 1;
     }
-    return sum;
+    return i*factorial(i-1);
 }
-const arr =[5,8,10,15,20,63,55,89,55];
-console.log(getOddNumbers(arr));
+console.log(factorial(5));
